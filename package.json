@@ -1,5 +1,5 @@
 {
-  "name": "angular-material-todo",
+  "name": "todolist-angular",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -17,14 +17,15 @@
     "@ngrx/store": "12.4.0",
     "@ngrx/store-devtools": "12.4.0",
     "core-js": "2.5.5",
+    "express": "^4.17.1",
     "karma-coverage-istanbul-reporter": "^3.0.3",
     "rxjs": "6.6.7",
     "zone.js": "~0.11.4"
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server.js",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -34,7 +35,7 @@
     "@angular/cli": "~12.2.3",
     "@angular/compiler-cli": "~12.2.3",
     "@types/jasmine": "~3.6.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^14.17.4",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
